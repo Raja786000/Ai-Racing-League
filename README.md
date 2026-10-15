@@ -1,3 +1,30 @@
+# AI Racing League — TORCS Agent
+
+**Author:** Raja Babu  
+**Track:** Corkscrew  
+**Repository:** https://github.com/Raja786000/Ai-Racing-League  
+**Simulator package source:** https://ibm.ent.box.com/v/TORCSdownloadzip
+
+## Files
+
+- `snakeoil3_gym.py` — original Snake Oil baseline/client file supplied for this project.
+- `snakeoil_V4.py` — modified driving agent, with telemetry logging added. The driving logic is preserved; logging records the sensors and actions on each simulation step.
+- `lap_summary.csv` — summary of the run shown in the provided screenshot: one lap, 01:53.10, top speed 174, zero recorded damage, zero pit stops. The user reported one brief track departure/fumble during this run.
+- `lap_data.csv` — telemetry CSV header. Running `snakeoil_V4.py` appends real per-step values to this file. The historical 01:53.10 run did not include saved step-by-step telemetry, so those past values are not fabricated.
+- `lap_time_screenshot.png` — screenshot evidence of the recorded lap result.
+
+## Run
+
+1. Put these files in the same working folder as the required TORCS/SCR simulator setup.
+2. Start TORCS and configure the Corkscrew practice race using the competition setup instructions.
+3. Run the agent from a terminal:
+   ```bash
+   python snakeoil_V4.py
+   ```
+4. After the race, check `lap_data.csv` for per-step telemetry and `lap_summary.csv` for the previously observed run. The telemetry logger appends rows to `lap_data.csv`; make a backup or clear old rows before a fresh run if you want a separate dataset.
+
+
+
 # Gym-TORCS
 
 Gym-TORCS is the reinforcement learning (RL) environment in TORCS domain with OpenAI-gym-like interface.
