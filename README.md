@@ -5,6 +5,10 @@
 **Repository:** https://github.com/Raja786000/Ai-Racing-League  
 **Simulator package source:** https://ibm.ent.box.com/v/TORCSdownloadzip
 
+## Lap Time Result
+
+![TORCS lap time showing 1:53.10 with zero damage](srt.png)
+
 ## Files
 
 - `snakeoil3_gym.py` — original Snake Oil baseline/client file supplied for this project.
