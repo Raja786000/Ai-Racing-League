@@ -11,7 +11,7 @@
 - `snakeoil_V4.py` — modified driving agent, with telemetry logging added. The driving logic is preserved; logging records the sensors and actions on each simulation step.
 - `lap_summary.csv` — summary of the run shown in the provided screenshot: one lap, 01:53.10, top speed 174, zero recorded damage, zero pit stops. The user reported one brief track departure/fumble during this run.
 - `lap_data.csv` — telemetry CSV header. Running `snakeoil_V4.py` appends real per-step values to this file. The historical 01:53.10 run did not include saved step-by-step telemetry, so those past values are not fabricated.
-- `lap_time_screenshot.png` — screenshot evidence of the recorded lap result.
+- `srt.png` — screenshot evidence of the recorded lap result.
 
 ## Run
 
